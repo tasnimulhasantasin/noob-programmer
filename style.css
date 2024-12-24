@@ -1,0 +1,298 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #4a90e2, #9013fe);
+    color: #fff;
+    line-height: 1.6;
+}
+
+
+header {
+    background: #2c3e50;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #f39c12;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    padding: 8px 15px;
+    transition: 0.3s ease;
+}
+
+.nav-links a:hover {
+    background: #f39c12;
+    color: #2c3e50;
+    border-radius: 5px;
+}
+
+
+section {
+    padding: 100px 20px;
+    text-align: center;
+    margin-top: 60px;
+}
+
+#home {
+    background-image: url('https://www.transparenttextures.com/patterns/asfalt-dark.png');
+    background-size: cover;
+    padding: 150px 20px;
+}
+
+.home-section h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.home-section p {
+    font-size: 24px;
+    font-style: italic;
+    color: #bdc3c7;
+}
+
+.about-section, .services-section, .contact-section {
+    background: #34495e;
+    margin: 20px 0;
+    padding: 50px 20px;
+    border-radius: 10px;
+}
+
+.about-section h2, .services-section h2, .contact-section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #f39c12;
+}
+
+.about-section p, .contact-section p {
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.services-section ul {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.services-section ul li {
+    font-size: 18px;
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 25px;
+}
+
+.services-section ul li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: #f39c12;
+    font-size: 20px;
+}
+
+footer {
+    text-align: center;
+    background: #2c3e50;
+    padding: 10px 20px;
+    font-size:
+}
+.search-container {
+    position: relative;
+    display: inline-block;
+}
+
+.search-bar {
+    padding: 8px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 25px;
+    background-color: #ecf0f1;
+    outline: none;
+    transition: width 0.4s ease;
+    width: 150px;
+}
+
+.search-bar:focus {
+    width: 250px;
+}
+
+.search-container input[type="text"] {
+    padding: 8px 15px;
+    font-size: 16px;
+    border-radius: 25px;
+    border: 2px solid #f39c12;
+    outline: none;
+}
+
+.search-container input[type="text"]::placeholder {
+    color: #7f8c8d;
+}
+
+
+.navbar .nav-links {
+    margin-right: 20px;
+}
+
+
+
+
+#login {
+    padding: 100px 20px;
+    text-align: center;
+    background: #34495e;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.login-section h2 {
+    font-size: 36px;
+    color: #f39c12;
+    margin-bottom: 20px;
+}
+
+.login-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+.login-section label {
+    font-size: 18px;
+    color: #fff;
+}
+
+.login-section input {
+    padding: 10px;
+    width: 250px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 2px solid #f39c12;
+    background-color: #ecf0f1;
+}
+
+.login-section button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #f39c12;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-section button:hover {
+    background-color: #e67e22;
+}
+
+.facebook-button {
+    display: inline-block;
+    background-color: #1877F2;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 100px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    cursor: pointer;
+}
+
+.facebook-button:hover {
+    background-color: #145dbf;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column; 
+        gap: 10px; 
+        text-align: left; 
+    }
+
+    .search-container {
+        margin-top: 15px; 
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+}
+.login-section {
+    background: #34495e;
+    padding: 50px 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.login-section h2 {
+    font-size: 36px;
+    color: #f39c12;
+    margin-bottom: 20px;
+}
+
+.login-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+.login-section label {
+    font-size: 18px;
+    color: #fff;
+}
+
+.login-section input {
+    padding: 10px;
+    width: 250px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 2px solid #f39c12;
+    background-color: #ecf0f1;
+}
+
+.login-section button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #f39c12;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-section button:hover {
+    background-color: #e67e22;
+}
+
+/* Smooth scrolling */
